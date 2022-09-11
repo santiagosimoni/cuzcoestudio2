@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "navbar"
+    "contenido "
+    "footer ";
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+    grid-area: navbar;
+}
+.logo{
+    margin: 1rem;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+.logo p a{
+    color: #db6f31;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Aboreto', cursive;
+}
+.barra2{
+    margin: 2rem;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    background-color: #db6f31;
+    border-radius: 5px;
+}
+nav ul li:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+}
+main{
+    grid-area: contenido;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #db6f31;
+    font-family: 'Aboreto', cursive;
+    margin-top: 3rem;
+}
+.informacion{
+    margin: 1rem;
+    padding-top: 2rem;
+}
+.informacion h2{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: overline;
+}
+.informacion p{
+    font-size: 1.2rem;
+}
+footer{
+    width: 100%;
+    background-color: burlywood;
+    margin-top: 4rem;
+    grid-area: footer;
+}
+.anchoPie{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.anchoPie p{
+    font-size: 1.5rem;
+}
+.redes{
+    justify-content: center;
+    display: inline-block;
+}
+.redes a img{
+    width: 1.5rem;
+    margin-left: 3rem;
+}
+.infoC{
+    margin: 0.8rem;
+    padding: 0.5rem;
+    padding-top: 3rem;
+}
+.infoC h2{
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.infoC h2 p{
+    font-size: 1rem;
+}
+.infoC h3 ul{
+    margin: 1rem;
+    padding-top: 2rem;
+    list-style: none;
+}
+.titulob{
+    font-family: 'Aboreto', cursive;
+    padding-top: 3rem;
+}
+.titulob p{
+    margin-left: 3rem;
+    padding-top: 3rem;
+    text-decoration: underline;
+    font-size: 2.3rem;
+}
+.imagenes{
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.imagenes img{
+    width: 10rem;
+    opacity: 0.5;
+}
+.imagenes img:hover{
+    width: 15rem;
+    border: 5px black solid;
+    opacity: 1;
+}
+.imagenesb{
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.imagenesb img{
+    width: 10rem;
+    opacity: 0.5;
+}
+.imagenesb img:hover{
+    width: 15rem;
+    border: 5px black solid;
+    opacity: 1;
+}
+.videos{
+    font-family: 'Aboreto', cursive;
+    padding-top: 5rem;
+    text-align: center;
+    text-decoration: overline;
+}
+.videos p{
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+.ubicacion{
+    margin: 1rem;
+    padding-top: 4rem;
+}
+.ubicacion h2 p{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.ubicacion h3 p{
+    font-size: 1.2rem;    
+}
+.ubicacion iframe{
+    padding-top: 3rem;
+    width: 700px;
+    height: 500px;
+}
+.horarios{
+    margin: 1rem;
+    padding-top: 2rem;    
+}
+.horarios h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.horarios h3{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.infoLugar{
+    margin: 1rem;
+    padding-top: 1rem;
+    color:#818181;
+}
+.infoLugar h2{
+    font-size: 2.2rem;
+}
+.infoLugar h3 img{
+    padding-top: 2rem;
+}
+.servicios{
+    margin: 1rem;
+    color:#818181;
+}
+.servicios h2{
+    font-size: 2.2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.servicios h3 img{
+    display: flex;
+    padding-top: 2rem;
+}
+@media all and (max-width:760px){
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    .barra2{
+        margin: 2rem;
+    }
+    nav ul li{
+        display: block;
+        background-color: #db6f31;
+        border-radius: 5px;
+        margin: 1rem;
+    } 
+    .imagenes{
+        display: block;
+    }
+    .imagenes img{
+        display: block;
+    }
+    .imagenesb{
+        display: block;
+    }
+    .imagenesb img{
+        display: block;
+    }
+    .videos iframe{
+        display: block;
+        width: 100%;
+    }
+    .ubicacion iframe{
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+    }
+    .redes a img{
+        width: 2rem;
+    }
+}
