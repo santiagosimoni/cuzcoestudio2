@@ -1,0 +1,36 @@
+.titulob{
+    font-family: 'Aboreto', cursive;
+    padding-top: 3rem;
+    p{
+        margin-left: 3rem;
+        padding-top: 3rem;
+        text-decoration: underline;
+        font-size: 2.3rem;
+    }
+}
+.imagenes{
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    img{
+        width: 10rem;
+        opacity: 0.5;
+        &:hover{
+            width: 15rem;
+            border: 5px black solid;
+            opacity: 1;
+        }
+    }
+}
+.videos{
+    font-family: 'Aboreto', cursive;
+    padding-top: 5rem;
+    text-align: center;
+    text-decoration: overline;
+    p{
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+}

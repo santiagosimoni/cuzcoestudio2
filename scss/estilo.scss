@@ -1,0 +1,46 @@
+@import './general';
+@import './index';
+@import './nosotros';
+@import './contacto';
+@import './imagenes';
+@import './ubicacion';
+@media all and (max-width:760px){
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    .barra2{
+        margin: 2rem;
+    }
+    nav ul li{
+        display: block;
+        background-color: #db6f31;
+        border-radius: 5px;
+        margin: 1rem;
+    } 
+    .imagenes{
+        display: block;
+    }
+    .imagenes img{
+        display: block;
+    }
+    .imagenesb{
+        display: block;
+    }
+    .imagenesb img{
+        display: block;
+    }
+    .videos iframe{
+        display: block;
+        width: 100%;
+    }
+    .ubicacion iframe{
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+    }
+    .redes a img{
+        width: 2rem;
+    }
+}
