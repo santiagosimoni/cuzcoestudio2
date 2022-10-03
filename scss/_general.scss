@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+h2, h3, h4, p{
+    color: white;
+}
+body {
     font-family: 'Catamaran', sans-serif;
+    background-color: $fondoNegro; 
 }
 .contenedor{
     width: 100%;
@@ -16,31 +20,26 @@ body{
     "contenido "
     "footer ";
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: burlywood;
-    grid-area: navbar;
+.navbar {
+    display: block;
+    background-color: $fondoNegro;
+    grid-area: navbar; 
+    margin: auto;
 }
-.logo{
-    margin: 1rem;
-    padding-top: 0.5rem;
-    justify-content: center;
-    p a{
-        color: #db6f31;
-        font-size: 2rem;
-        text-decoration: none;
-        font-family: 'Aboreto', cursive;
-}
-}
-.barra2{
-    margin: 2rem;
-    justify-content: space-between;
+.logo img{
+    margin: 1rem 0 1rem 28rem;
+    width: 12rem;
+    height: 12rem;
+    &:hover{
+        transform: scale(1.5);
+        transition: all 0.8s ease;
+    }
 }
 nav ul li{
     display: inline-block;
-    background-color: #db6f31;
-    border-radius: 5px;
+    background-color: $dorado;
+    border-radius: 10px;
+    margin-left: 7rem;
     &:hover{
         transform: scale(1.2);
         transition: all 0.5s ease;
@@ -60,15 +59,15 @@ main{
 h1{
     text-align: center;
     font-size: 3rem;
-    color: #db6f31;
+    color: $dorado;
     font-family: 'Aboreto', cursive;
     margin-top: 3rem;
 }
 footer{
     width: 100%;
-    background-color: burlywood;
+    background-color: $doradoOscuro;
     margin-top: 4rem;
-    grid-area: footer;
+    grid-area: footer; 
 }
 .anchoPie{
     width: 90%;
@@ -78,6 +77,7 @@ footer{
     padding-top: 1rem;
     p{
         font-size: 1.5rem;
+        color: black;
     }
 }
 .redes{
