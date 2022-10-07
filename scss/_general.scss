@@ -21,25 +21,28 @@ body {
     "footer ";
 }
 .navbar {
-    display: block;
-    background-color: $fondoNegro;
-    grid-area: navbar; 
-    margin: auto;
+    display: flex;
+    background: rgb(34,11,21);
+    background: linear-gradient(90deg, rgba(34,11,21,1) 0%, rgba(222,135,89,1) 71%, rgba(255,157,101,1) 100%);
+    grid-area: navbar;
+    width: 100%;
 }
 .logo img{
-    margin: 1rem 0 1rem 28rem;
-    width: 12rem;
-    height: 12rem;
+    width: 6rem;
+    height: 6rem;
     &:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
         transition: all 0.8s ease;
     }
 }
 nav ul li{
     display: inline-block;
-    background-color: $dorado;
-    border-radius: 10px;
-    margin-left: 7rem;
+    background-color: $fondoNegro;
+    border-color: #d8d8d8;
+    border-width: 1px;
+    border-style: solid;
+    border-radius:20px;
+    margin: 2.5rem 0rem 0rem 7rem;   
     &:hover{
         transform: scale(1.2);
         transition: all 0.5s ease;
@@ -81,8 +84,8 @@ footer{
     }
 }
 .redes{
-    justify-content: center;
-    display: inline-block;
+    margin: auto;
+    display: flex;
     a img{
         width: 1.5rem;
         margin-left: 3rem;
