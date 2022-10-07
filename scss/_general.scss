@@ -28,11 +28,14 @@ body {
     width: 100%;
 }
 .logo img{
+    margin-left: 5rem;
     width: 6rem;
     height: 6rem;
+    opacity: 0.5;
     &:hover{
         transform: scale(1.2);
-        transition: all 0.8s ease;
+        transition: all 1.5s ease;
+        opacity: 1;
     }
 }
 nav ul li{
@@ -42,10 +45,11 @@ nav ul li{
     border-width: 1px;
     border-style: solid;
     border-radius:20px;
-    margin: 2.5rem 0rem 0rem 7rem;   
+    margin: 2.5rem 0rem 0rem 7rem; 
     &:hover{
         transform: scale(1.2);
-        transition: all 0.5s ease;
+        transition: all 1s ease;
+        background-color: $dorado;
     }
     a{
         color: white;
@@ -88,10 +92,12 @@ footer{
     display: flex;
     a img{
         width: 1.5rem;
-        margin-left: 3rem;
+        margin-left: 2rem;
+        opacity: 0.5;
         &:hover{
             transform: scale(1.7);
-            transition: all 0.8s ease;
+            transition: all 1.3s ease;
+            opacity: 1;
         }
     }
 }
