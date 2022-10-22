@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 h2, h3, h4, p {
-  color: white; }
+  color: white;
+  font-size: 1.3rem; }
 
 body {
   font-family: 'Catamaran', sans-serif;
@@ -41,7 +42,7 @@ nav ul li {
   border-width: 1px;
   border-style: solid;
   border-radius: 20px;
-  margin: 2.5rem 0rem 0rem 7rem; }
+  margin: 2.2rem 0 0 7rem; }
   nav ul li:hover {
     transform: scale(1.2);
     transition: all 1s ease;
@@ -103,45 +104,42 @@ footer {
       font-size: 1.2rem; }
 
 .imagenp {
-  margin: auto;
-  width: 85%; }
+  display: flex;
+  justify-content: space-between; }
   .imagenp img {
-    width: 90%; }
+    margin: auto;
+    width: 45rem;
+    border-radius: 15px; }
 
 .infoLugar {
   margin: 1rem;
-  padding-top: 1rem;
-  color: #818181; }
-  .infoLugar h2 {
+  padding-top: 1rem; }
+  .infoLugar h2 p {
     font-size: 2.2rem; }
-  .infoLugar h3 img {
-    padding-top: 2rem; }
+  .infoLugar h3 {
+    display: flex; }
+    .infoLugar h3 img {
+      margin: 2rem 2rem 1rem 3.4rem;
+      width: 33rem; }
+    .infoLugar h3 p {
+      font-size: 1.2rem;
+      margin: 2rem; }
+    .infoLugar h3 b {
+      display: block;
+      margin: 0.5rem;
+      font-size: 1.5rem; }
 
 .servicios {
-  margin: 1rem;
-  color: #818181; }
-  .servicios h2 {
+  margin: 2rem 0 0 1rem; }
+  .servicios h2 p {
     font-size: 2.2rem;
-    text-align: center;
-    text-decoration: underline; }
+    text-align: center; }
+  .servicios h3 p {
+    color: #818181;
+    font-size: 1rem; }
   .servicios h3 img {
     display: flex;
     padding-top: 2rem; }
-
-.infoC {
-  margin: 0.8rem;
-  padding: 0.5rem;
-  padding-top: 3rem; }
-  .infoC h2 {
-    font-size: 2.3rem;
-    margin-left: 1rem;
-    text-transform: uppercase; }
-    .infoC h2 p {
-      font-size: 1rem; }
-  .infoC h3 ul {
-    margin: 1rem;
-    padding-top: 2rem;
-    list-style: none; }
 
 .titulob {
   font-family: 'Aboreto', cursive;
@@ -154,17 +152,25 @@ footer {
 
 .imagenes {
   padding-top: 4rem;
-  align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin: 1rem; }
+  justify-content: space-around;
+  margin: 2rem; }
   .imagenes img {
-    width: 10rem;
-    opacity: 0.5; }
+    width: 25rem;
+    opacity: 0.6; }
     .imagenes img:hover {
-      width: 15rem;
-      border: 5px black solid;
-      opacity: 1; }
+      width: 30rem;
+      opacity: 1;
+      border-radius: 10px; }
+
+.artistas {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem; }
+  .artistas img {
+    width: 25rem;
+    border-radius: 6px; }
 
 .videos {
   font-family: 'Aboreto', cursive;
@@ -183,23 +189,28 @@ footer {
     text-align: center;
     padding-bottom: 2rem; }
   .ubicacion h3 p {
-    font-size: 1.2rem; }
-  .ubicacion iframe {
-    padding-top: 3rem;
-    width: 700px;
-    height: 500px; }
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center; }
+  .ubicacion .mapa {
+    display: flex;
+    justify-content: center; }
+    .ubicacion .mapa iframe {
+      width: 90%;
+      height: 700px; }
 
 .horarios {
   margin: 1rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  text-align: center; }
   .horarios h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem; }
-  .horarios h3 {
-    font-size: 1.2rem;
     margin-bottom: 2rem; }
+    .horarios h2 p {
+      font-size: 2rem; }
+  .horarios h3 {
+    font-size: 1.2rem; }
 
-@media all and (max-width: 1150px) {
+@media all and (max-width: 900px) {
   .navbar {
     display: block;
     text-align: center; }
@@ -226,4 +237,21 @@ footer {
   .redes {
     display: flex; }
   .redes a img {
-    width: 2rem; } }
+    width: 2rem; }
+  .infoLugar {
+    display: block; }
+    .infoLugar h3 {
+      display: block; }
+      .infoLugar h3 img {
+        width: 22rem; }
+  .servicios {
+    display: block; }
+    .servicios h3 {
+      display: block; }
+  .imagenp {
+    display: block; }
+    .imagenp img {
+      width: 30rem;
+      margin: auto; }
+  .artistas {
+    display: block; } }

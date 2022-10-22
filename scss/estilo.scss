@@ -8,7 +8,7 @@ $doradoOscuro: #ac5b2c;
 @import './contacto';
 @import './imagenes';
 @import './ubicacion';
-@media all and (max-width:1150px){
+@media all and (max-width:900px){
     .navbar {
         display: block;
         text-align: center; 
@@ -46,5 +46,30 @@ $doradoOscuro: #ac5b2c;
     }
     .redes a img{
         width: 2rem;
+    }
+    .infoLugar{
+        display: block;
+        h3{
+            display: block;
+            img{
+                width: 22rem;
+            }
+        }
+    }
+    .servicios{
+        display: block;
+        h3{
+            display: block;
+        }
+    }
+    .imagenp{
+        display: block;
+        img{
+            width: 30rem;
+            margin: auto;
+        }
+    }
+    .artistas{
+        display: block;
     }
 }

@@ -7,23 +7,30 @@
         padding-bottom: 2rem;
     }
     h3 p{
-        font-size: 1.2rem;    
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
     }
-    iframe{
-        padding-top: 3rem;
-        width: 700px;
-        height: 500px;
+    .mapa{
+        display: flex;
+        justify-content: center;
+        iframe{
+            width:90%;
+            height: 700px;
+        }
     }
 }
 .horarios{
     margin: 1rem;
-    padding-top: 2rem;    
+    padding-top: 2rem;
+    text-align: center;
     h2{
         margin-bottom: 2rem;
-        font-size: 2rem;
+        p{
+            font-size: 2rem;
+        }
     }
     h3{
         font-size: 1.2rem;
-        margin-bottom: 2rem;
     }
 }
